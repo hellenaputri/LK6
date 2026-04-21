@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form Pendaftaran</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
     <style>
         body {
@@ -43,6 +44,49 @@
         button:hover {
             background-color: darkblue;
         }
+
+        .social-media {
+            text-align: center;
+            margin-top: 20px;
+            padding-top: 15px;
+            border-top: 1px solid #eee;
+        }
+
+        .social-media p {
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .social-icons a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            color: white;
+            font-size: 18px;
+            text-decoration: none;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .social-icons a:hover {
+            transform: scale(1.15);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+        }
+
+        .social-icons .instagram { background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); }
+        .social-icons .facebook { background-color: #1877F2; }
+        .social-icons .twitter { background-color: #000000; }
+        .social-icons .tiktok { background-color: #000000; }
+        .social-icons .youtube { background-color: #FF0000; }
     </style>
 </head>
 
@@ -75,6 +119,17 @@
 
     </form>
     <div id="hasilPendaftaran"></div>
+
+    <div class="social-media">
+        <p>Ikuti kami di media sosial:</p>
+        <div class="social-icons">
+            <a href="#" class="instagram" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="facebook" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="twitter" title="X / Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" class="tiktok" title="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="#" class="youtube" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+    </div>
 </section>
 <script src="scrip.js"></script>
 
